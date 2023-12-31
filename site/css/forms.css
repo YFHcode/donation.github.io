@@ -1,0 +1,62 @@
+
+/***** contact form *****/
+#contact-form {
+	position:relative;
+	vertical-align:top;	
+	z-index:1;
+	margin:0
+}
+	#contact-form fieldset {border:none;padding:0; width:100%; overflow:hidden;}
+			#contact-form label {display:block; min-height:39px; position:relative;}
+			#contact-form .message{min-height:245px;}
+			#contact-form input, #contact-form textarea {
+				padding: 7px 10px;
+				margin:0;
+				font: 14px "Times New Roman", Times, serif;				
+				background:#dcd9c8;
+				outline:none;
+				border:none;
+				width:291px;
+				 box-shadow:none;
+	           color:#6d6b5f
+	       
+			}
+			#contact-form .area .error {float:none;}
+			#contact-form textarea {
+				width:491px;
+				height:198px;
+				resize:none;
+				overflow:auto;
+			}
+			#contact-form .success {display:none; margin-bottom:20px;color:#000}
+			#contact-form .error,
+			#contact-form .empty {
+				color:#000;
+				font-size:11px;
+				line-height:1.27em;
+				display:none;
+				overflow:hidden;
+				margin-bottom:5px;
+			}
+			
+			
+			
+.buttons-wrapper{ position:absolute;bottom:0;right:1px}
+.buttons-wrapper a {cursor:pointer;margin-left:15px;}
+.buttons-wrapper a:hover{color:#000} 
+
+@media only screen and (max-width: 995px) {
+
+	#contact-form textarea{width:385px;}
+}
+@media only screen and (max-width: 767px){	
+ #contact-form textarea{width:358px;}
+
+}
+
+
+
+@media only screen and (max-width: 479px){
+
+	#contact-form input, #contact-form textarea{width:238px;}
+}

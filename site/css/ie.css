@@ -1,0 +1,5 @@
+
+body{min-width:980px;}
+
+.sf-menu li li a:before{position:absolute;left:-9px;display:none}
+.sf-menu li li > a:hover:before, .sf-menu li li.sfHover > a:before{display:block }
