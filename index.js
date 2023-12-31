@@ -4,7 +4,7 @@ loginForm.addEventListener('submit', async (event) => {
     const formData = new URLSearchParams(new FormData(event.target));
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/token', {
+        const response = await fetch('https://default-servise-fastapi-aevwb465ja-nw.a.run.app/token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
