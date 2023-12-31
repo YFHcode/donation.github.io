@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #bae2ed;
+    background-color: #d3c19a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,9 +161,9 @@ input {
 }
 
 .overlay {
-	background: #73cfe8;
-	background: -webkit-linear-gradient(to right, #73cfe8, #73cfe8);
-	background: linear-gradient(to right, #73cfe8, #73cfe8);
+	background: #a08e67;
+	background: -webkit-linear-gradient(to right, #a08e67, #a08e67);
+	background: linear-gradient(to right, #a08e67, #a08e67);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
