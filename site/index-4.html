@@ -15,13 +15,11 @@
 <script src="js/script.js"></script>
 
 <script>
-$(window).load(function(){
-	$('#contact-form').forms({
-		ownerEmail:'#'
-	})
-})
-
-
+  $(window).load(function(){
+    $('#donation-form').forms({
+      ownerEmail:'#'
+    });
+  });
 </script>
 
 
@@ -100,28 +98,56 @@ Glasgow, D04 89GR.</dt>
              
             </article>
             <article class="grid_13 omega prefix_1">
-              <h2>Get in touch</h2>
-               <form id="contact-form">
-          <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
-          <fieldset>
-            <label class="name">
-              <input type="text" value="Name:">
-              <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
-            <label class="email">
-              <input type="email" value="Email:">
-              <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
-            <label class="phone">
-              <input type="tel" value="Phone:">
-              <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
-            <label class="message">
-              <textarea>Message:</textarea>
-              <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
-            <div class="clear"></div>
-            <div class="buttons-wrapper"> <a class="button" data-type="reset">clear</a> <a class="button" data-type="submit">send message</a></div>
-          </fieldset>
-        </form>           
-           
+              <h2>Make a Donation</h2>
+              <form id="donation-form">
+                <div class="success">Donation form submitted! <strong>Thank you for your contribution.</strong></div>
+                <fieldset>
+                  <legend>Your Information</legend>
+                  <div class="form-row">
+                    <h6 class="label">Your Full Name:</h6>
+                    <input type="text" placeholder="John Doe">
+                  </div>
+                  <div class="form-row">
+                    <h6 class="label">Your Email Address:</h6>
+                    <input type="email" placeholder="john@example.com">
+                  </div>
+                  <div class="form-row">
+                    <h6 class="label">Your Phone Number:</h6>
+                    <input type="tel" placeholder="(555) 123-4567">
+                  </div>
+                </fieldset>
+            
+                <fieldset>
+                  <legend>Donation Details</legend>
+                  <div class="form-row">
+                    <h6 class="label">Donation Amount ($):</h6>
+                    <input type="number" placeholder="50">
+                  </div>
+                  <div class="form-row">
+                    <h6 class="label">Select Payment Method:</h6>
+                    <select>
+                      <option value="" disabled selected>Select Payment Method</option>
+                      <option value="credit-card">Credit Card</option>
+                      <option value="paypal">PayPal</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </fieldset>
+            
+                <div class="form-row">
+                  <h6 class="label">Comments or Special Instructions:</h6>
+                  <textarea placeholder="Any comments or special instructions"></textarea>
+                </div>
+            
+                <div class="buttons-wrapper">
+                  <a class="button" data-type="reset">Clear</a>
+                  <a class="button" data-type="submit">Make Donation</a>
+                </div>
+              </form>
             </article>
+            
+            
+
           </div>
           <div class="clear"></div>
         </div>
