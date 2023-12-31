@@ -15,7 +15,7 @@ loginForm.addEventListener('submit', async (event) => {
         if (response.ok) {
             const data = await response.json();
             // Handle successful login, e.g., redirect to a new page
-            window.location.href = 'donation.github.io/site/index.html';
+            window.location.href = '/donation.github.io/site/index.html';
         } else {
             // Handle login failure
             const errorData = await response.json();
