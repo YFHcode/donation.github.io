@@ -11,7 +11,7 @@ donationForm.addEventListener('submit', async (event) => {
         const response = await fetch('https://donation-api-aevwb465ja-nw.a.run.app/donate', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                "Content-type": "application/json",
             },
             body: formData,
         });
