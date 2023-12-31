@@ -92,48 +92,49 @@ Glasgow, D04 89GR.</dt>
               <form id="donation-form" action="https://donation-api-aevwb465ja-nw.a.run.app/donate" method="post">
                 <div class="success">Donation form submitted! <strong>Thank you for your contribution.</strong></div>
                 <fieldset>
-                  <legend>Your Information</legend>
-                  <div class="form-row">
-                    <h6 class="label">Your Full Name:</h6>
-                    <input type="text" placeholder="John Doe">
-                  </div>
-                  <div class="form-row">
-                    <h6 class="label">Your Email Address:</h6>
-                    <input type="email" placeholder="john@example.com">
-                  </div>
-                  <div class="form-row">
-                    <h6 class="label">Your Phone Number:</h6>
-                    <input type="tel" placeholder="(555) 123-4567">
-                  </div>
+                    <legend>Your Information</legend>
+                    <div class="form-row">
+                        <h6 class="label">Your Full Name:</h6>
+                        <input type="text" name="full_name" placeholder="John Doe">
+                    </div>
+                    <div class="form-row">
+                        <h6 class="label">Your Email Address:</h6>
+                        <input type="email" name="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-row">
+                        <h6 class="label">Your Phone Number:</h6>
+                        <input type="tel" name="phone_number" placeholder="(555) 123-4567">
+                    </div>
                 </fieldset>
             
                 <fieldset>
-                  <legend>Donation Details</legend>
-                  <div class="form-row">
-                    <h6 class="label">Donation Amount ($):</h6>
-                    <input type="number" placeholder="50">
-                  </div>
-                  <div class="form-row">
-                    <h6 class="label">Select Payment Method:</h6>
-                    <select>
-                      <option value="" disabled selected>Select Payment Method</option>
-                      <option value="credit-card">Credit Card</option>
-                      <option value="paypal">PayPal</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
+                    <legend>Donation Details</legend>
+                    <div class="form-row">
+                        <h6 class="label">Donation Amount ($):</h6>
+                        <input type="number" name="donation_amount" placeholder="50">
+                    </div>
+                    <div class="form-row">
+                        <h6 class="label">Select Payment Method:</h6>
+                        <select name="payment_method">
+                            <option value="" disabled selected>Select Payment Method</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                 </fieldset>
             
                 <div class="form-row">
-                  <h6 class="label">Comments or Special Instructions:</h6>
-                  <textarea placeholder="Any comments or special instructions"></textarea>
+                    <h6 class="label">Comments or Special Instructions:</h6>
+                    <textarea name="comments" placeholder="Any comments or special instructions"></textarea>
                 </div>
             
                 <div class="buttons-wrapper">
-                  <a class="button" data-type="reset">Clear</a>
-                  <button type="submit" class="button">Make Donation</button>
+                    <a class="button" data-type="reset">Clear</a>
+                    <button type="submit" class="button">Make Donation</button>
                 </div>
-              </form>
+            </form>
+            
             </article>
             
             
