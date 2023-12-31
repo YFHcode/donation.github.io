@@ -5,7 +5,9 @@ donationForm.addEventListener('submit', async (event) => {
 
     const formData = new URLSearchParams(new FormData(event.target));
 
-    try {
+    console.log('Form data:', formData);
+
+        try {
         const response = await fetch('https://donation-api-aevwb465ja-nw.a.run.app/donate', {
             method: 'POST',
             headers: {
@@ -13,6 +15,8 @@ donationForm.addEventListener('submit', async (event) => {
             },
             body: formData,
         });
+
+    console.log('Response:', response);
 
         if (response.ok) {
             const data = await response.json();
