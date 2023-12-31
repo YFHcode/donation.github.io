@@ -3,20 +3,22 @@ const donationForm = document.getElementById('donation-form');
 donationForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    const formData = new URLSearchParams(new FormData(event.target));
+    // Extract form data and convert to JSON
+    const formData = new FormData(event.target);
+    const jsonData = {};
 
-    console.log('Form data:', formData);
+    formData.forEach((value, key) => {
+        jsonData[key] = value;
+    });
 
-        try {
+    try {
         const response = await fetch('https://donation-api-aevwb465ja-nw.a.run.app/donate', {
             method: 'POST',
             headers: {
-                "Content-type": "application/x-www-form-urlencoded",
+                'Content-Type': 'application/json', // Set content type to JSON
             },
-            body: formData,
+            body: JSON.stringify(jsonData), // Convert JSON data to a string
         });
-
-    console.log('Response:', response);
 
         if (response.ok) {
             const data = await response.json();
